@@ -17,5 +17,6 @@ var answers = [
     "Ja",
     "Nyet",
     "Don't ever ask me that again.",
-    "Getting a little persnonal, eh? But yeah, totally."
+    "Getting a little personal, eh? But yeah, totally.",
+    "You'll be DEAD!"
 ]
