@@ -15,8 +15,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var simpleLabel: UILabel!
     
     @IBAction func changeLabel(sender: AnyObject) {
-        simpleLabel.text = "I deem it to be!.... " + chooser.decider(answers)
-        simpleTextField.text = ""
+        UIView.animateWithDuration(2.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+            self.simpleLabel.alpha = 0.0
+            }, completion: {
+                (finished: Bool) -> Void in
+                
+                //Once the label is completely invisible, set the text and fade it back in
+                self.simpleLabel.text = "I deem it to be!.... " + chooser.decider(answers)
+                
+                // Fade in
+                UIView.animateWithDuration(1.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+                    self.simpleLabel.alpha = 1.0
+                    }, completion: nil)
+        })
     }
     
     override func viewDidLoad() {
