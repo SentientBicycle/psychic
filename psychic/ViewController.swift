@@ -43,7 +43,7 @@ class ViewController: UIViewController {
                 (finished: Bool) -> Void in
                 
                 //Once the label is completely invisible, set the text and fade it back in
-                self.simpleLabel.text = chooser.decider(answers)
+                self.simpleLabel.text = chooser.decider(responders) + chooser.decider(answers)
                 
                 // Fade in
                 UIView.animateWithDuration(1.0, delay: 3.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {

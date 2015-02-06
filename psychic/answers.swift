@@ -9,15 +9,24 @@
 import Foundation
 
 var answers = [
-    "Sure. why not?",
-    "Heck NO!",
-    "You don't want to know.",
-    "If you don't know then I'm not going to tell you.",
-    "If I had a nickle for everytime someone asked me that.... No.",
-    "Ja.",
-    "Nyet.",
-    "Don't ever ask me that again.",
-    "Getting a little personal, eh? But yeah, totally.",
-    "You'll be DEAD!",
-    "That’s probably the dumbest question I’ve ever heard"
+    "sure. why not?",
+    "HECK NO!",
+    "you don't want to know.",
+    "if you don't know then you don't deserve to know.",
+    "no.",
+    "Ja",
+    "Nyet",
+    "don't ever ask me that again.",
+    "yeah, totally.",
+    "you'll be DEAD!"
+]
+
+var responders = [
+    "You're getting a little too is the personal! But,",
+    "Unfortunately, ",
+    "I have to be honest with you, ",
+    "The thing is, ",
+    "If I had a nickle for everytime someone asked me that... fine... ",
+    "Oh Snap! ...",
+    "Uh, "
 ]
