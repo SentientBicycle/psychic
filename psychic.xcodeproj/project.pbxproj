@@ -15,6 +15,7 @@
 		29B852FC1A850AB100D406A1 /* psychicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B852FB1A850AB100D406A1 /* psychicTests.swift */; };
 		29B853071A852A8700D406A1 /* answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B853061A852A8700D406A1 /* answers.swift */; };
 		29B853091A852BF900D406A1 /* answerChoosen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B853081A852BF900D406A1 /* answerChoosen.swift */; };
+		29D12EE71A85601800CC4C53 /* preAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D12EE61A85601800CC4C53 /* preAnswer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		29B852FB1A850AB100D406A1 /* psychicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = psychicTests.swift; sourceTree = "<group>"; };
 		29B853061A852A8700D406A1 /* answers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = answers.swift; sourceTree = "<group>"; };
 		29B853081A852BF900D406A1 /* answerChoosen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = answerChoosen.swift; sourceTree = "<group>"; };
+		29D12EE61A85601800CC4C53 /* preAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = preAnswer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				29B853061A852A8700D406A1 /* answers.swift */,
+				29D12EE61A85601800CC4C53 /* preAnswer.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			files = (
 				29B852E81A850AB100D406A1 /* ViewController.swift in Sources */,
 				29B853091A852BF900D406A1 /* answerChoosen.swift in Sources */,
+				29D12EE71A85601800CC4C53 /* preAnswer.swift in Sources */,
 				29B852E61A850AB100D406A1 /* AppDelegate.swift in Sources */,
 				29B853071A852A8700D406A1 /* answers.swift in Sources */,
 			);
@@ -423,6 +427,7 @@
 				29B853011A850AB100D406A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29B853021A850AB100D406A1 /* Build configuration list for PBXNativeTarget "psychicTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +436,7 @@
 				29B853041A850AB100D406A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
