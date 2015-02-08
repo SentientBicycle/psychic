@@ -10,11 +10,11 @@ import Foundation
 
 
 var responders = [
-    "You're getting a little too personal! But the truth is,",
+    "You're getting a little too personal! But the truth is, ",
     "Unfortunately, ",
     "I have to be honest with you, ",
     "The thing is, ",
-    "If I had a nickle for everytime someone asked me that... fine... ",
+    "If I had a nickle for everytime someone asked me that... \n whatever, I say ",
     "Oh Snap! ...",
     "Uh, "
 ]
@@ -26,10 +26,10 @@ var answers = [
     "you don't want to know.",
     "if you don't know then you don't deserve to know.",
     "no. Nope. Not a chance.",
-    "maybe (to be fair I wasn't really listening to your question)",
+    "maybe. \n\n To be fair, I wasn't really listening to your question",
     "da nyet, navernoe",
     "don't ever ask me that again.",
     "yeah, totally.",
     "anything is possible",
-    "you'll be DEAD!"
+    "you'll be DEAD! Just kidding, you should be careful."
 ]

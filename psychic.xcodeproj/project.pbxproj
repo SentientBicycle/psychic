@@ -15,6 +15,10 @@
 		29B853071A852A8700D406A1 /* answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B853061A852A8700D406A1 /* answers.swift */; };
 		29B853091A852BF900D406A1 /* answerChoosen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B853081A852BF900D406A1 /* answerChoosen.swift */; };
 		29D12EE71A85601800CC4C53 /* preAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D12EE61A85601800CC4C53 /* preAnswer.swift */; };
+		4B25F8A71A87DEF50023365C /* Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25F8A61A87DEF50023365C /* Responder.swift */; };
+		4BC2514C1A875103008C2494 /* Smoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC2514B1A875103008C2494 /* Smoker.swift */; };
+		4BCB53231A8715D4008B4BEB /* LaunchPsychic.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BCB53221A8715D4008B4BEB /* LaunchPsychic.xib */; };
+		4BCB53291A871A2F008B4BEB /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCB53281A871A2F008B4BEB /* SpriteKit.framework */; };
 		4BCFD40A1A87084200A64090 /* Smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4BCFD4081A87084200A64090 /* Smoke.sks */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +45,11 @@
 		29B853061A852A8700D406A1 /* answers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = answers.swift; sourceTree = "<group>"; };
 		29B853081A852BF900D406A1 /* answerChoosen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = answerChoosen.swift; sourceTree = "<group>"; };
 		29D12EE61A85601800CC4C53 /* preAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = preAnswer.swift; sourceTree = "<group>"; };
-		4BCFD4081A87084200A64090 /* Smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Smoke.sks; sourceTree = "<group>"; };
+		4B25F8A61A87DEF50023365C /* Responder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responder.swift; sourceTree = "<group>"; };
+		4BC2514B1A875103008C2494 /* Smoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Smoker.swift; path = ../Smoker.swift; sourceTree = "<group>"; };
+		4BCB53221A8715D4008B4BEB /* LaunchPsychic.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchPsychic.xib; path = ../LaunchPsychic.xib; sourceTree = "<group>"; };
+		4BCB53281A871A2F008B4BEB /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		4BCFD4081A87084200A64090 /* Smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Smoke.sks; path = ../Smoke.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BCB53291A871A2F008B4BEB /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +74,7 @@
 		29B852D71A850AB100D406A1 = {
 			isa = PBXGroup;
 			children = (
-				4BCFD4081A87084200A64090 /* Smoke.sks */,
+				4BCB53281A871A2F008B4BEB /* SpriteKit.framework */,
 				29B852E21A850AB100D406A1 /* psychic */,
 				29B852F81A850AB100D406A1 /* psychicTests */,
 				29B852E11A850AB100D406A1 /* Products */,
@@ -84,11 +93,11 @@
 		29B852E21A850AB100D406A1 /* psychic */ = {
 			isa = PBXGroup;
 			children = (
+				4B25F8A81A87E3B90023365C /* Classes */,
 				29B853051A852A6A00D406A1 /* Data */,
 				29B852E51A850AB100D406A1 /* AppDelegate.swift */,
 				29B852E71A850AB100D406A1 /* ViewController.swift */,
 				29B852E91A850AB100D406A1 /* Main.storyboard */,
-				29B852EC1A850AB100D406A1 /* Images.xcassets */,
 				29B852E31A850AB100D406A1 /* Supporting Files */,
 			);
 			path = psychic;
@@ -97,8 +106,9 @@
 		29B852E31A850AB100D406A1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				29B852EC1A850AB100D406A1 /* Images.xcassets */,
+				4BCB53221A8715D4008B4BEB /* LaunchPsychic.xib */,
 				29B852E41A850AB100D406A1 /* Info.plist */,
-				29B853081A852BF900D406A1 /* answerChoosen.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -127,6 +137,33 @@
 				29D12EE61A85601800CC4C53 /* preAnswer.swift */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		4B25F8A31A87D8120023365C /* Smoke */ = {
+			isa = PBXGroup;
+			children = (
+				4BC2514B1A875103008C2494 /* Smoker.swift */,
+				4BCFD4081A87084200A64090 /* Smoke.sks */,
+			);
+			name = Smoke;
+			sourceTree = "<group>";
+		};
+		4B25F8A81A87E3B90023365C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4B25F8A31A87D8120023365C /* Smoke */,
+				4B25F8A91A87E3E90023365C /* Responder */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		4B25F8A91A87E3E90023365C /* Responder */ = {
+			isa = PBXGroup;
+			children = (
+				29B853081A852BF900D406A1 /* answerChoosen.swift */,
+				4B25F8A61A87DEF50023365C /* Responder.swift */,
+			);
+			name = Responder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BCB53231A8715D4008B4BEB /* LaunchPsychic.xib in Resources */,
 				29B852EB1A850AB100D406A1 /* Main.storyboard in Resources */,
 				29B852ED1A850AB100D406A1 /* Images.xcassets in Resources */,
 				4BCFD40A1A87084200A64090 /* Smoke.sks in Resources */,
@@ -229,9 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BC2514C1A875103008C2494 /* Smoker.swift in Sources */,
 				29B852E81A850AB100D406A1 /* ViewController.swift in Sources */,
 				29B853091A852BF900D406A1 /* answerChoosen.swift in Sources */,
 				29D12EE71A85601800CC4C53 /* preAnswer.swift in Sources */,
+				4B25F8A71A87DEF50023365C /* Responder.swift in Sources */,
 				29B852E61A850AB100D406A1 /* AppDelegate.swift in Sources */,
 				29B853071A852A8700D406A1 /* answers.swift in Sources */,
 			);

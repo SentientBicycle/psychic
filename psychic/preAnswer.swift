@@ -13,12 +13,12 @@ var preAnswers = [
     "I can't wait to hear what genius question you came up with this time.",
     "You again?",
     "I'm gonna guess the answer is gonna be \"no\", but let's hear it.",
-    "Yes, you're gonna die.  Oh, sorry you havent asked your question yet.  Proceed.",
+    "Yes, you're gonna die.  \n\n Oh, sorry you havent asked your question yet.  \n\nProceed.",
     "I can't believe I have to listen to your whining again.",
     "Can I help you with anything today?",
     "What is your request?",
-    "Let me consult the spirts for you.  \nAKA Take a wild ass guess.",
+    "Let me consult the \nspirts for you.  \n\n AKA: \n\nTake a wild ass guess.",
     "Pathetic.",
     "Life is passing you by while you look at this phone for answers.",
-    "You had the power all along.  Just click your heels together three times, and \nTHINK FOR YOURSELF!"
+    "You had the power all along.  \n\nJust click your heels together three times, and \n\nTHINK FOR YOURSELF!"
 ]

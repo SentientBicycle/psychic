@@ -10,12 +10,100 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "psychic/ViewController.swift"
-            timestampString = "445053876.114029"
+            timestampString = "445111772.792481"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "setResponse(_:success:failure:)"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "psychic.ViewController.simpleLabel.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UILabel&gt;"
+                  moduleName = "psychic"
+                  urlString = "file:///Users/base/Code/iOS/psychic/psychic/ViewController.swift"
+                  timestampString = "445074544.725916"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "psychic.ViewController.simpleLabel.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UILabel&gt;"
+                  moduleName = "psychic"
+                  urlString = "file:///Users/base/Code/iOS/psychic/psychic/ViewController.swift"
+                  timestampString = "445074544.726261"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "psychic.ViewController.init (psychic.ViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; psychic.ViewController"
+                  moduleName = "psychic"
+                  urlString = "file:///Users/base/Code/iOS/psychic/psychic/ViewController.swift"
+                  timestampString = "445074544.726589"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "53">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "psychic.ViewController.init (psychic.ViewController.Type)() -&gt; psychic.ViewController"
+                  moduleName = "psychic"
+                  urlString = "file:///Users/base/Code/iOS/psychic/psychic/ViewController.swift"
+                  timestampString = "445074544.726906"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "psychic.ViewController.init (psychic.ViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; psychic.ViewController"
+                  moduleName = "psychic"
+                  urlString = "file:///Users/base/Code/iOS/psychic/psychic/ViewController.swift"
+                  timestampString = "445074544.727199"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Smoker.swift"
+            timestampString = "445111772.792481"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "init(imageNamed:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
