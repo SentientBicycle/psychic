@@ -11,11 +11,11 @@
 		29B852E81A850AB100D406A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B852E71A850AB100D406A1 /* ViewController.swift */; };
 		29B852EB1A850AB100D406A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B852E91A850AB100D406A1 /* Main.storyboard */; };
 		29B852ED1A850AB100D406A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29B852EC1A850AB100D406A1 /* Images.xcassets */; };
-		29B852F01A850AB100D406A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29B852EE1A850AB100D406A1 /* LaunchScreen.xib */; };
 		29B852FC1A850AB100D406A1 /* psychicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B852FB1A850AB100D406A1 /* psychicTests.swift */; };
 		29B853071A852A8700D406A1 /* answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B853061A852A8700D406A1 /* answers.swift */; };
 		29B853091A852BF900D406A1 /* answerChoosen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B853081A852BF900D406A1 /* answerChoosen.swift */; };
 		29D12EE71A85601800CC4C53 /* preAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D12EE61A85601800CC4C53 /* preAnswer.swift */; };
+		4BCFD40A1A87084200A64090 /* Smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4BCFD4081A87084200A64090 /* Smoke.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +35,13 @@
 		29B852E71A850AB100D406A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		29B852EA1A850AB100D406A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29B852EC1A850AB100D406A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		29B852EF1A850AB100D406A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		29B852F51A850AB100D406A1 /* psychicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = psychicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B852FA1A850AB100D406A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29B852FB1A850AB100D406A1 /* psychicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = psychicTests.swift; sourceTree = "<group>"; };
 		29B853061A852A8700D406A1 /* answers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = answers.swift; sourceTree = "<group>"; };
 		29B853081A852BF900D406A1 /* answerChoosen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = answerChoosen.swift; sourceTree = "<group>"; };
 		29D12EE61A85601800CC4C53 /* preAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = preAnswer.swift; sourceTree = "<group>"; };
+		4BCFD4081A87084200A64090 /* Smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Smoke.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +65,7 @@
 		29B852D71A850AB100D406A1 = {
 			isa = PBXGroup;
 			children = (
+				4BCFD4081A87084200A64090 /* Smoke.sks */,
 				29B852E21A850AB100D406A1 /* psychic */,
 				29B852F81A850AB100D406A1 /* psychicTests */,
 				29B852E11A850AB100D406A1 /* Products */,
@@ -88,7 +89,6 @@
 				29B852E71A850AB100D406A1 /* ViewController.swift */,
 				29B852E91A850AB100D406A1 /* Main.storyboard */,
 				29B852EC1A850AB100D406A1 /* Images.xcassets */,
-				29B852EE1A850AB100D406A1 /* LaunchScreen.xib */,
 				29B852E31A850AB100D406A1 /* Supporting Files */,
 			);
 			path = psychic;
@@ -174,7 +174,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "Chris Goodwin";
+				ORGANIZATIONNAME = "Sleepy Mongoose";
 				TargetAttributes = {
 					29B852DF1A850AB100D406A1 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -210,8 +210,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				29B852EB1A850AB100D406A1 /* Main.storyboard in Resources */,
-				29B852F01A850AB100D406A1 /* LaunchScreen.xib in Resources */,
 				29B852ED1A850AB100D406A1 /* Images.xcassets in Resources */,
+				4BCFD40A1A87084200A64090 /* Smoke.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,14 +262,6 @@
 				29B852EA1A850AB100D406A1 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		29B852EE1A850AB100D406A1 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				29B852EF1A850AB100D406A1 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -361,6 +353,7 @@
 				INFOPLIST_FILE = psychic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -371,6 +364,7 @@
 				INFOPLIST_FILE = psychic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

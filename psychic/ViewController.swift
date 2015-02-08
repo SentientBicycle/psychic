@@ -7,72 +7,88 @@
 //
 
 import UIKit
+import SpriteKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var simpleTextField: UITextField!
 
     @IBOutlet weak var simpleLabel: UILabel!
     
-    @IBOutlet weak var waiting: UILabel!
+    var isActive = false
     
     override func canBecomeFirstResponder() -> Bool {
         return true
     }
     
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent) {
-        if motion == .MotionShake {
-            
-            UIView.animateWithDuration(1.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
-                self.waiting.alpha = 0.0
-                }, completion: {
-                    (finished: Bool) -> Void in
-                    
-                    //Once the label is completely invisible, set the text and fade it back in
-                    self.waiting.text = chooser.decider(preAnswers)
-                    
-                    // Fade in
-                    UIView.animateWithDuration(1.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
-                        self.waiting.alpha = 1.0
-                        }, completion: nil)
-            })
-            
-            UIView.animateWithDuration(1.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
-                self.simpleLabel.alpha = 0.0
-            }, completion: {
-                (finished: Bool) -> Void in
-                
-                //Once the label is completely invisible, set the text and fade it back in
-                self.simpleLabel.text = chooser.decider(responders) + chooser.decider(answers)
-                
-                // Fade in
-                UIView.animateWithDuration(1.0, delay: 3.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
-                    self.simpleLabel.alpha = 1.0
-                    }, completion: nil)
-            })
+        if (motion == .MotionShake && self.isActive != true) {
+            self.isActive = true
+            provideAnswer();
         }
     }
     
-    @IBAction func changeLabel(sender: AnyObject) {
-        UIView.animateWithDuration(2.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
-            self.simpleLabel.alpha = 0.0
+    func provideAnswer() {
+        // Build a response and pass it to are setter.
+        var builtResponse = chooser.decider(responders) + chooser.decider(answers)
+        setResponse(builtResponse,
+            success: {
+                var delta: Int64 = 5 * Int64(NSEC_PER_SEC)
+                var time = dispatch_time(DISPATCH_TIME_NOW, delta)
+                dispatch_after(time, dispatch_get_main_queue(), {
+                    self.readyForQuestion()
+                });
+            },
+            failure: {}
+        );
+    }
+    
+    
+    func readyForQuestion(){
+        // Prepare for the next question.
+        var builtResponse = chooser.decider(preAnswers)
+        setResponse(builtResponse,
+            success: {
+                self.isActive = false
+            },
+            failure: {}
+        );
+    }
+
+   
+    // Function to adjust label with contemplations
+    func setResponse(newResponse: String, success: () -> (), failure: () -> ()) {
+        
+        UIView.animateWithDuration(0.8, delay: 0.2, options: .CurveEaseOut, animations: {
+            self.simpleLabel.layer.opacity = 0.0
             }, completion: {
-                (finished: Bool) -> Void in
+                finished in
                 
                 //Once the label is completely invisible, set the text and fade it back in
-                self.simpleLabel.text = chooser.decider(answers)
+                self.simpleLabel.text = newResponse
                 
                 // Fade in
-                UIView.animateWithDuration(1.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
-                    self.simpleLabel.alpha = 1.0
-                    }, completion: nil)
+                UIView.animateWithDuration(1.0, delay: 1.0, options: .CurveEaseIn, animations: {
+                    self.simpleLabel.layer.opacity = 1.0
+                    }, completion: {
+                        finished in
+                        success()
+                })
+                
+                
         })
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        // Placeholder to start animations
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
