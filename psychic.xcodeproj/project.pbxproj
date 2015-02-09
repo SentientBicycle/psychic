@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2938B9781A883A7E00968761 /* swiftyJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2938B9771A883A7E00968761 /* swiftyJson.swift */; };
+		2938B97A1A883AA000968761 /* networkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2938B9791A883AA000968761 /* networkManager.swift */; };
 		29B852E61A850AB100D406A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B852E51A850AB100D406A1 /* AppDelegate.swift */; };
 		29B852E81A850AB100D406A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B852E71A850AB100D406A1 /* ViewController.swift */; };
 		29B852EB1A850AB100D406A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B852E91A850AB100D406A1 /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2938B9771A883A7E00968761 /* swiftyJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = swiftyJson.swift; path = "../../psychic copy/psychic/swiftyJson.swift"; sourceTree = "<group>"; };
+		2938B9791A883AA000968761 /* networkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = networkManager.swift; path = "../../psychic copy/psychic/networkManager.swift"; sourceTree = "<group>"; };
 		29B852E01A850AB100D406A1 /* psychic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = psychic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B852E41A850AB100D406A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29B852E51A850AB100D406A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2938B9751A883A2E00968761 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				2938B9771A883A7E00968761 /* swiftyJson.swift */,
+			);
+			name = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		2938B9761A883A4500968761 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2938B9791A883AA000968761 /* networkManager.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 		29B852D71A850AB100D406A1 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +171,8 @@
 		4B25F8A81A87E3B90023365C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2938B9761A883A4500968761 /* Network */,
+				2938B9751A883A2E00968761 /* SwiftyJSON */,
 				4B25F8A31A87D8120023365C /* Smoke */,
 				4B25F8A91A87E3E90023365C /* Responder */,
 			);
@@ -267,9 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2938B97A1A883AA000968761 /* networkManager.swift in Sources */,
 				4BC2514C1A875103008C2494 /* Smoker.swift in Sources */,
 				29B852E81A850AB100D406A1 /* ViewController.swift in Sources */,
 				29B853091A852BF900D406A1 /* answerChoosen.swift in Sources */,
+				2938B9781A883A7E00968761 /* swiftyJson.swift in Sources */,
 				29D12EE71A85601800CC4C53 /* preAnswer.swift in Sources */,
 				4B25F8A71A87DEF50023365C /* Responder.swift in Sources */,
 				29B852E61A850AB100D406A1 /* AppDelegate.swift in Sources */,

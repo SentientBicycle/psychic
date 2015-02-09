@@ -15,7 +15,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var simpleLabel: UILabel!
     var smokerNode:Smoker?
     var responder:Responder!
+    var jsoned:JSON!
     
+    var preAnswers:[String] = []
+    
+    var answers:[String] = []
+    
+    var responders:[String] = []
     
     override func canBecomeFirstResponder() -> Bool {
         return true
@@ -23,12 +29,6 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(animated: Bool) {
         // Placeholder to start animations
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib
-        responder = Responder(responseLabel: simpleLabel);
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,6 +45,27 @@ class ViewController: UIViewController {
         if (motion == .MotionShake && responder.getStatus() != true) {
             responder.provideAnswer();
         }
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        networkManager.getWithSuccess { (jsonData) -> Void in
+            self.jsoned = JSON(data: jsonData)
+            let answersJson = self.jsoned["answers"]
+            let preAnswersJson = self.jsoned["preAnswers"]
+            let respondersJson = self.jsoned["responders"]
+    
+            for (var i:Int = 0; i < self.jsoned["answers"].count; i++){
+                self.answers.append(answersJson[i].stringValue)
+            }
+            for (var i:Int = 0; i < self.jsoned["preAnswers"].count; i++){
+                self.preAnswers.append(preAnswersJson[i].stringValue)
+            }
+            for (var i:Int = 0; i < self.jsoned["responders"].count; i++){
+                self.responders.append(respondersJson[i].stringValue)
+            }
+        }
+        // Do any additional setup after loading the view, typically from a nib
+        responder = Responder(responseLabel: simpleLabel);
     }
     
 }
