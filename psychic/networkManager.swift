@@ -8,7 +8,8 @@
 
 import Foundation
 
-let AppURL = "http://sleepymongoose.com/data.json"
+
+
 class networkManager {
     
     class func loadDataFromURL(url: NSURL, completion:(data: NSData?, error: NSError?) -> Void) {
@@ -30,10 +31,10 @@ class networkManager {
         
         loadDataTask.resume()
     }
-    
-    class func getWithSuccess(success: ((appData: NSData!) -> Void)) {
+
+    class func getWithSuccess(appurl:String, success: ((appData: NSData!) -> Void)) {
         
-        loadDataFromURL(NSURL(string: AppURL)!, completion:{(data, error) -> Void in
+        self.loadDataFromURL(NSURL(string: appurl)!, completion:{(data, error) -> Void in
             
             if let urlData = data {
                 
