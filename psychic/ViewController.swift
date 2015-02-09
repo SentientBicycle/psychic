@@ -63,9 +63,9 @@ class ViewController: UIViewController {
             for (var i:Int = 0; i < self.jsoned["responders"].count; i++){
                 self.responders.append(respondersJson[i].stringValue)
             }
+            self.responder = Responder(responseLabel: self.simpleLabel, answers: self.answers, preAnswers: self.preAnswers, responders: self.responders);
         }
         // Do any additional setup after loading the view, typically from a nib
-        responder = Responder(responseLabel: simpleLabel);
     }
     
 }
