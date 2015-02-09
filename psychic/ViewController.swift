@@ -44,6 +44,12 @@ class ViewController: UIViewController {
             responder.provideAnswer()
         }
     }
+    
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        if (responder.getStatus() != true) {
+            responder.provideAnswer()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
