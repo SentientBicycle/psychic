@@ -13,14 +13,20 @@ class ViewController: UIViewController {
 
 
     @IBOutlet weak var simpleLabel: UILabel!
+    @IBOutlet weak var startText: UILabel!
     var responder:Responder!
 
+
+    
     override func canBecomeFirstResponder() -> Bool {
         return true
     }
 
     override func viewDidAppear(animated: Bool) {
         // Placeholder to start animations
+        UIView.animateWithDuration(2, delay: 3, options: .CurveLinear, animations: {
+            self.startText.layer.opacity = 0.0
+            }, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
