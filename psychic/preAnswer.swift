@@ -7,7 +7,7 @@
 //
 
 import Foundation
-/*
+
 var preAnswers = [
     "Ask your stupid question.",
     "I wish you would grow a spine and make your own decisions, but go ahead and ask me.",
@@ -23,4 +23,3 @@ var preAnswers = [
     "Life is passing you by while you look at this phone for answers.",
     "You had the power all along.  \n\nJust click your heels together three times, and \n\nTHINK FOR YOURSELF!"
 ]
-*/

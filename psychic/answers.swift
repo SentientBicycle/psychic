@@ -8,7 +8,7 @@
 
 import Foundation
 
-/*
+
 var responders = [
     "You're getting a little too personal! But the truth is, ",
     "Unfortunately, ",
@@ -33,4 +33,3 @@ var answers = [
     "anything is possible",
     "you'll be DEAD! Just kidding, you should be careful."
 ]
-*/

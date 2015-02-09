@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2938B9781A883A7E00968761 /* swiftyJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2938B9771A883A7E00968761 /* swiftyJson.swift */; };
-		2938B97A1A883AA000968761 /* networkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2938B9791A883AA000968761 /* networkManager.swift */; };
+		29794F531A8841F3002E1657 /* networkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29794F521A8841F3002E1657 /* networkManager.swift */; };
+		29794F551A88421E002E1657 /* swiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29794F541A88421E002E1657 /* swiftyJSON.swift */; };
 		29B852E61A850AB100D406A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B852E51A850AB100D406A1 /* AppDelegate.swift */; };
 		29B852E81A850AB100D406A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B852E71A850AB100D406A1 /* ViewController.swift */; };
 		29B852EB1A850AB100D406A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B852E91A850AB100D406A1 /* Main.storyboard */; };
@@ -35,8 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2938B9771A883A7E00968761 /* swiftyJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = swiftyJson.swift; path = "../../psychic copy/psychic/swiftyJson.swift"; sourceTree = "<group>"; };
-		2938B9791A883AA000968761 /* networkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = networkManager.swift; path = "../../psychic copy/psychic/networkManager.swift"; sourceTree = "<group>"; };
+		29794F521A8841F3002E1657 /* networkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = networkManager.swift; sourceTree = "<group>"; };
+		29794F541A88421E002E1657 /* swiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = swiftyJSON.swift; sourceTree = "<group>"; };
 		29B852E01A850AB100D406A1 /* psychic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = psychic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B852E41A850AB100D406A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29B852E51A850AB100D406A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		2938B9751A883A2E00968761 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				2938B9771A883A7E00968761 /* swiftyJson.swift */,
+				29794F541A88421E002E1657 /* swiftyJSON.swift */,
 			);
 			name = SwiftyJSON;
 			sourceTree = "<group>";
@@ -86,7 +86,7 @@
 		2938B9761A883A4500968761 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				2938B9791A883AA000968761 /* networkManager.swift */,
+				29794F521A8841F3002E1657 /* networkManager.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -289,11 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2938B97A1A883AA000968761 /* networkManager.swift in Sources */,
+				29794F531A8841F3002E1657 /* networkManager.swift in Sources */,
+				29794F551A88421E002E1657 /* swiftyJSON.swift in Sources */,
 				4BC2514C1A875103008C2494 /* Smoker.swift in Sources */,
 				29B852E81A850AB100D406A1 /* ViewController.swift in Sources */,
 				29B853091A852BF900D406A1 /* answerChoosen.swift in Sources */,
-				2938B9781A883A7E00968761 /* swiftyJson.swift in Sources */,
 				29D12EE71A85601800CC4C53 /* preAnswer.swift in Sources */,
 				4B25F8A71A87DEF50023365C /* Responder.swift in Sources */,
 				29B852E61A850AB100D406A1 /* AppDelegate.swift in Sources */,
