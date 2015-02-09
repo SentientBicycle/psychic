@@ -13,20 +13,21 @@ class Responder {
     
     var responseLabel:UILabel
     
-    var preAnswers:[String] = []
-    
-    var answers:[String] = []
-    
-    var responders:[String] = []
+    let preAnswers: JSON!
+    let answers:    JSON!
+    let responders: JSON!
     
     var isActive = false
     
     
-    init( responseLabel:UILabel, answers:[String], preAnswers:[String], responders:[String] ){
-        self.responseLabel = responseLabel
-        self.answers = answers
-        self.preAnswers = preAnswers
-        self.responders = responders
+    init( responseLabel:UILabel, jsonData: JSON ){
+
+        self.responseLabel  = responseLabel
+       
+        self.answers        = jsonData[0]["answers"]
+        self.preAnswers     = jsonData[0]["preAnswers"]
+        self.responders     = jsonData[0]["responders"]
+
     }
     
     func getStatus() -> Bool{
@@ -40,11 +41,13 @@ class Responder {
         self.setStatus(true)
         
         // Build a response and pass it to are setter.
-        var builtResponse = chooser.decider(self.responders) + chooser.decider(self.answers)
+        var builtResponse = Chooser.decider(self.responders) + Chooser.decider(self.answers)
+        
         setResponse(builtResponse,
             success: {
-                let delta: Int64 = 5 * Int64(NSEC_PER_SEC)
-                let time = dispatch_time(DISPATCH_TIME_NOW, delta)
+                let delta: Int64    = 3 * Int64(NSEC_PER_SEC)
+                let time            = dispatch_time(DISPATCH_TIME_NOW, delta)
+                
                 dispatch_after(time, dispatch_get_main_queue(), {
                     self.readyForQuestion()
                 });
@@ -56,7 +59,7 @@ class Responder {
     
     func readyForQuestion(){
         // Prepare for the next question.
-        var builtResponse = chooser.decider(self.preAnswers)
+        var builtResponse = Chooser.decider(self.preAnswers)
         setResponse(builtResponse,
             success: {
                 self.isActive = false
