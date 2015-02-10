@@ -54,7 +54,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib
-        networkManager.getWithSuccess("http://sleepymongoose.build/data.json" , { (jsonData) -> Void in
+        networkManager.getWithSuccess("https://charlatan.firebaseio.com/rude.json" , { (jsonData) -> Void in
             
             var returnedJson:JSON!  = JSON(data: jsonData)
             self.responder          = Responder(responseLabel: self.simpleLabel, jsonData: returnedJson);
@@ -64,5 +64,5 @@ class ViewController: UIViewController {
     }
 
 }
-// Add tap functionality
+
 // Add site functionality to add your own responses ( this would make the thing a viable app store member )
