@@ -13,9 +13,10 @@ class ViewController: UIViewController {
 
 
     @IBOutlet weak var simpleLabel: UILabel!
-    var smokerNode:Smoker?
+    @IBOutlet weak var startText: UILabel!
     var responder:Responder!
-    
+
+
     
     override func canBecomeFirstResponder() -> Bool {
         return true
@@ -23,12 +24,9 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(animated: Bool) {
         // Placeholder to start animations
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib
-        responder = Responder(responseLabel: simpleLabel);
+        UIView.animateWithDuration(2, delay: 3, options: .CurveLinear, animations: {
+            self.startText.layer.opacity = 0.0
+            }, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,13 +38,31 @@ class ViewController: UIViewController {
         return true
     }
 
-    
+
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent) {
         if (motion == .MotionShake && responder.getStatus() != true) {
-            responder.provideAnswer();
+            responder.provideAnswer()
         }
     }
     
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        if (responder.getStatus() != true) {
+            responder.provideAnswer()
+        }
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib
+        networkManager.getWithSuccess("http://sleepymongoose.build/data.json" , { (jsonData) -> Void in
+            
+            var returnedJson:JSON!  = JSON(data: jsonData)
+            self.responder          = Responder(responseLabel: self.simpleLabel, jsonData: returnedJson);
+            
+        })
+    
+    }
+
 }
 // Add tap functionality
 // Add site functionality to add your own responses ( this would make the thing a viable app store member )

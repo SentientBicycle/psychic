@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29794F531A8841F3002E1657 /* networkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29794F521A8841F3002E1657 /* networkManager.swift */; };
+		29794F551A88421E002E1657 /* swiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29794F541A88421E002E1657 /* swiftyJSON.swift */; };
 		29B852E61A850AB100D406A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B852E51A850AB100D406A1 /* AppDelegate.swift */; };
 		29B852E81A850AB100D406A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B852E71A850AB100D406A1 /* ViewController.swift */; };
 		29B852EB1A850AB100D406A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B852E91A850AB100D406A1 /* Main.storyboard */; };
 		29B852ED1A850AB100D406A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29B852EC1A850AB100D406A1 /* Images.xcassets */; };
 		29B852FC1A850AB100D406A1 /* psychicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B852FB1A850AB100D406A1 /* psychicTests.swift */; };
 		29B853071A852A8700D406A1 /* answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B853061A852A8700D406A1 /* answers.swift */; };
-		29B853091A852BF900D406A1 /* answerChoosen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B853081A852BF900D406A1 /* answerChoosen.swift */; };
-		29D12EE71A85601800CC4C53 /* preAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D12EE61A85601800CC4C53 /* preAnswer.swift */; };
+		29B853091A852BF900D406A1 /* Chooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B853081A852BF900D406A1 /* Chooser.swift */; };
 		4B25F8A71A87DEF50023365C /* Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25F8A61A87DEF50023365C /* Responder.swift */; };
 		4BC2514C1A875103008C2494 /* Smoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC2514B1A875103008C2494 /* Smoker.swift */; };
 		4BCB53231A8715D4008B4BEB /* LaunchPsychic.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BCB53221A8715D4008B4BEB /* LaunchPsychic.xib */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29794F521A8841F3002E1657 /* networkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = networkManager.swift; sourceTree = "<group>"; };
+		29794F541A88421E002E1657 /* swiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = swiftyJSON.swift; sourceTree = "<group>"; };
 		29B852E01A850AB100D406A1 /* psychic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = psychic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B852E41A850AB100D406A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29B852E51A850AB100D406A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,8 +46,7 @@
 		29B852FA1A850AB100D406A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29B852FB1A850AB100D406A1 /* psychicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = psychicTests.swift; sourceTree = "<group>"; };
 		29B853061A852A8700D406A1 /* answers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = answers.swift; sourceTree = "<group>"; };
-		29B853081A852BF900D406A1 /* answerChoosen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = answerChoosen.swift; sourceTree = "<group>"; };
-		29D12EE61A85601800CC4C53 /* preAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = preAnswer.swift; sourceTree = "<group>"; };
+		29B853081A852BF900D406A1 /* Chooser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chooser.swift; sourceTree = "<group>"; };
 		4B25F8A61A87DEF50023365C /* Responder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responder.swift; sourceTree = "<group>"; };
 		4BC2514B1A875103008C2494 /* Smoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Smoker.swift; path = ../Smoker.swift; sourceTree = "<group>"; };
 		4BCB53221A8715D4008B4BEB /* LaunchPsychic.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchPsychic.xib; path = ../LaunchPsychic.xib; sourceTree = "<group>"; };
@@ -71,6 +73,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2938B9751A883A2E00968761 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				29794F541A88421E002E1657 /* swiftyJSON.swift */,
+			);
+			name = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		2938B9761A883A4500968761 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				29794F521A8841F3002E1657 /* networkManager.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 		29B852D71A850AB100D406A1 = {
 			isa = PBXGroup;
 			children = (
@@ -93,11 +111,13 @@
 		29B852E21A850AB100D406A1 /* psychic */ = {
 			isa = PBXGroup;
 			children = (
+				DA011D011A891FC4002FA512 /* Libraries */,
 				4B25F8A81A87E3B90023365C /* Classes */,
 				29B853051A852A6A00D406A1 /* Data */,
 				29B852E51A850AB100D406A1 /* AppDelegate.swift */,
 				29B852E71A850AB100D406A1 /* ViewController.swift */,
 				29B852E91A850AB100D406A1 /* Main.storyboard */,
+				29B852EC1A850AB100D406A1 /* Images.xcassets */,
 				29B852E31A850AB100D406A1 /* Supporting Files */,
 			);
 			path = psychic;
@@ -106,7 +126,6 @@
 		29B852E31A850AB100D406A1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				29B852EC1A850AB100D406A1 /* Images.xcassets */,
 				4BCB53221A8715D4008B4BEB /* LaunchPsychic.xib */,
 				29B852E41A850AB100D406A1 /* Info.plist */,
 			);
@@ -134,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				29B853061A852A8700D406A1 /* answers.swift */,
-				29D12EE61A85601800CC4C53 /* preAnswer.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -151,6 +169,7 @@
 		4B25F8A81A87E3B90023365C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2938B9761A883A4500968761 /* Network */,
 				4B25F8A31A87D8120023365C /* Smoke */,
 				4B25F8A91A87E3E90023365C /* Responder */,
 			);
@@ -160,10 +179,18 @@
 		4B25F8A91A87E3E90023365C /* Responder */ = {
 			isa = PBXGroup;
 			children = (
-				29B853081A852BF900D406A1 /* answerChoosen.swift */,
+				29B853081A852BF900D406A1 /* Chooser.swift */,
 				4B25F8A61A87DEF50023365C /* Responder.swift */,
 			);
 			name = Responder;
+			sourceTree = "<group>";
+		};
+		DA011D011A891FC4002FA512 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				2938B9751A883A2E00968761 /* SwiftyJSON */,
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,10 +294,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29794F531A8841F3002E1657 /* networkManager.swift in Sources */,
+				29794F551A88421E002E1657 /* swiftyJSON.swift in Sources */,
 				4BC2514C1A875103008C2494 /* Smoker.swift in Sources */,
 				29B852E81A850AB100D406A1 /* ViewController.swift in Sources */,
-				29B853091A852BF900D406A1 /* answerChoosen.swift in Sources */,
-				29D12EE71A85601800CC4C53 /* preAnswer.swift in Sources */,
+				29B853091A852BF900D406A1 /* Chooser.swift in Sources */,
 				4B25F8A71A87DEF50023365C /* Responder.swift in Sources */,
 				29B852E61A850AB100D406A1 /* AppDelegate.swift in Sources */,
 				29B853071A852A8700D406A1 /* answers.swift in Sources */,

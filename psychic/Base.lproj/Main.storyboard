@@ -24,10 +24,20 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake me for answers ... or dont.  Your call." textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="a1E-m5-m73">
+                                <rect key="frame" x="42" y="674" width="334" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.51065726902173914" green="0.51065726902173914" blue="0.51065726902173914" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="a1E-m5-m73" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="6rg-N7-mfF"/>
+                            <constraint firstItem="a1E-m5-m73" firstAttribute="top" secondItem="Dhw-Zi-yzm" secondAttribute="bottom" constant="96" id="8LY-UV-sKy"/>
                             <constraint firstItem="Dhw-Zi-yzm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="M23-ig-8N3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a1E-m5-m73" secondAttribute="trailing" constant="22" id="RCn-JU-iWt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="a1E-m5-m73" secondAttribute="bottom" constant="41" id="bkE-gi-kaT"/>
                             <constraint firstItem="Dhw-Zi-yzm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eOC-n5-Nuz"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dhw-Zi-yzm" secondAttribute="bottom" constant="158" id="isZ-Nr-aLW"/>
                             <constraint firstItem="Dhw-Zi-yzm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="jFB-KU-BCS"/>
@@ -36,6 +46,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="simpleLabel" destination="Dhw-Zi-yzm" id="VHk-oW-Gym"/>
+                        <outlet property="startText" destination="a1E-m5-m73" id="DEK-rc-P3k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
