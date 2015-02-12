@@ -9,13 +9,13 @@
 import UIKit
 import SpriteKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SideBarDelegate {
 
 
     @IBOutlet weak var simpleLabel: UILabel!
     @IBOutlet weak var startText: UILabel!
     var responder:Responder!
-
+    var sideBar:SideBar     = SideBar()
 
     
     override func canBecomeFirstResponder() -> Bool {
@@ -46,8 +46,8 @@ class ViewController: UIViewController {
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        if (responder.getStatus() != true) {
-            responder.provideAnswer()
+        for touch: AnyObject in touches {
+            // Nada until I get it to not fire on swipe
         }
     }
 
@@ -60,9 +60,20 @@ class ViewController: UIViewController {
             self.responder          = Responder(responseLabel: self.simpleLabel, jsonData: returnedJson);
             
         })
+        
+
+        sideBar                     = SideBar(sourceView: self.view, menuItems: ["Replace", "This", "With something", "More Better"])
+        sideBar.delegate            = self
     
     }
 
+    func sideBarDidSelectButtonAtIndex(index: Int) {
+        if index == 0 {
+            println("Whatever")
+        }
+    }
+    
+    
 }
 
 // Add site functionality to add your own responses ( this would make the thing a viable app store member )
