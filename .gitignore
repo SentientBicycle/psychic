@@ -14,13 +14,3 @@ xcuserdata
 
 # OSX
 .DS_Store
-
-# TextMate
-*.tm_build_errors
-
-# Appcode
-.idea
-
-# VendorKit
-Vendor
-*.vendorbackup*
