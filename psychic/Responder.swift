@@ -43,7 +43,7 @@ class Responder {
         // Build a response and pass it to are setter.
         var builtResponse = Chooser.decider(self.responders) + Chooser.decider(self.answers)
 
-        setResponse(builtResponse, fontStyle: .lightGrayColor(),
+        setResponse(builtResponse, fontStyle: .darkGrayColor(),
             success: {
                 let delta: Int64    = 3 * Int64(NSEC_PER_SEC)
                 let time            = dispatch_time(DISPATCH_TIME_NOW, delta)
