@@ -21,6 +21,8 @@
 		4BCB53231A8715D4008B4BEB /* LaunchPsychic.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BCB53221A8715D4008B4BEB /* LaunchPsychic.xib */; };
 		4BCB53291A871A2F008B4BEB /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCB53281A871A2F008B4BEB /* SpriteKit.framework */; };
 		4BCFD40A1A87084200A64090 /* Smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4BCFD4081A87084200A64090 /* Smoke.sks */; };
+		4BD87AE31A8C651E00C4AA27 /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD87AE21A8C651E00C4AA27 /* SideBarTableViewController.swift */; };
+		4BD87AE51A8C69CD00C4AA27 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD87AE41A8C69CD00C4AA27 /* SideBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		4BCB53221A8715D4008B4BEB /* LaunchPsychic.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchPsychic.xib; path = ../LaunchPsychic.xib; sourceTree = "<group>"; };
 		4BCB53281A871A2F008B4BEB /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		4BCFD4081A87084200A64090 /* Smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Smoke.sks; path = ../Smoke.sks; sourceTree = "<group>"; };
+		4BD87AE21A8C651E00C4AA27 /* SideBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideBarTableViewController.swift; path = ../SideBarTableViewController.swift; sourceTree = "<group>"; };
+		4BD87AE41A8C69CD00C4AA27 /* SideBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideBar.swift; path = ../SideBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,11 +115,11 @@
 		29B852E21A850AB100D406A1 /* psychic */ = {
 			isa = PBXGroup;
 			children = (
+				29B852E51A850AB100D406A1 /* AppDelegate.swift */,
+				29B852E71A850AB100D406A1 /* ViewController.swift */,
 				DA011D011A891FC4002FA512 /* Libraries */,
 				4B25F8A81A87E3B90023365C /* Classes */,
 				29B853051A852A6A00D406A1 /* Data */,
-				29B852E51A850AB100D406A1 /* AppDelegate.swift */,
-				29B852E71A850AB100D406A1 /* ViewController.swift */,
 				29B852E91A850AB100D406A1 /* Main.storyboard */,
 				29B852EC1A850AB100D406A1 /* Images.xcassets */,
 				29B852E31A850AB100D406A1 /* Supporting Files */,
@@ -169,6 +173,7 @@
 		4B25F8A81A87E3B90023365C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4BD87AE61A8C7E7300C4AA27 /* SideBar */,
 				2938B9761A883A4500968761 /* Network */,
 				4B25F8A31A87D8120023365C /* Smoke */,
 				4B25F8A91A87E3E90023365C /* Responder */,
@@ -183,6 +188,15 @@
 				4B25F8A61A87DEF50023365C /* Responder.swift */,
 			);
 			name = Responder;
+			sourceTree = "<group>";
+		};
+		4BD87AE61A8C7E7300C4AA27 /* SideBar */ = {
+			isa = PBXGroup;
+			children = (
+				4BD87AE21A8C651E00C4AA27 /* SideBarTableViewController.swift */,
+				4BD87AE41A8C69CD00C4AA27 /* SideBar.swift */,
+			);
+			name = SideBar;
 			sourceTree = "<group>";
 		};
 		DA011D011A891FC4002FA512 /* Libraries */ = {
@@ -294,7 +308,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD87AE51A8C69CD00C4AA27 /* SideBar.swift in Sources */,
 				29794F531A8841F3002E1657 /* networkManager.swift in Sources */,
+				4BD87AE31A8C651E00C4AA27 /* SideBarTableViewController.swift in Sources */,
 				29794F551A88421E002E1657 /* swiftyJSON.swift in Sources */,
 				4BC2514C1A875103008C2494 /* Smoker.swift in Sources */,
 				29B852E81A850AB100D406A1 /* ViewController.swift in Sources */,
